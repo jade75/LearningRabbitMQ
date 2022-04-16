@@ -74,7 +74,7 @@ http://localhost:15672/
 
 
 
-![python-one](RobbitMQ.assets/python-one.png)
+![python-one](https://github.com/jade75/LearningRabbitMQ/blob/master/pic/python-one.png)
 
 ***Producing*** means nothing more than sending. A program that sends messages is a *producer* :
 
@@ -86,7 +86,7 @@ http://localhost:15672/
 
 The AMPQ protocol defines five exchange types: ***Direct*, *Fanout*, *Topic,* and *Headers***.
 
-![截屏2022-04-16 下午5.33.08](RobbitMQ.assets/截屏2022-04-16 下午5.33.08.png)
+![截屏2022-04-16 下午5.33.08](https://github.com/jade75/LearningRabbitMQ/blob/master/pic/%E6%88%AA%E5%B1%8F2022-04-16%20%E4%B8%8B%E5%8D%885.33.08.png)
 
 **The *default exchange*** is bound automatically to every queue created.
 
