@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 @Configuration
-public class TopConfig {
+public class TopicConfig {
 
     @Autowired
     private Environment env;
