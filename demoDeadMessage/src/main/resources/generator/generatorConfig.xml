@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="MysqlContext" targetRuntime="MyBatis3" defaultModelType="flat">
+
+
+<!--        <property name="beginningDelimiter" value="`"/>-->
+<!--        <property name="endingDelimiter" value="`"/>-->
+
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/db_middleware?serverTimezone=Asia/Shanghai"
+                        userId="root"
+                        password="root1234">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="ie.dkit.d00216118.demomessage.model" targetProject="src/main/java"/>
+
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+
+
+
+        <javaClientGenerator targetPackage="ie.dkit.d00216118.demomessage.mapper" targetProject="src/main/java"
+                             type="XMLMAPPER"/>
+
+<!--        <table tableName="user" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>-->
+
+        <!--        <table tableName="user"></table>-->
+        <table tableName="sys_log"></table>
+    </context>
+</generatorConfiguration>
